@@ -24,16 +24,16 @@ eleventyNavigation:
         <picture>
             <source
                 media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
+                srcset="/assets/images/Mount Timpanogos background.jpg"
             />
             <source
                 media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
+                srcset="/assets/images/Mount Timpanogos background.jpg"
             />
             <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/images/cabinets2.jpg"
+                src="/assets/images/Mount Timpanogos background.jpg"
                 alt="kitchen cabinets"
                 loading="eager"
                 width="2500"
@@ -43,67 +43,78 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
+<!--                    Blog                      -->
+<!-- ============================================ -->
 
-    <div class="blog-container main-content-wrapper">
-        <!--Main content -->
-        <div class="main-content">
-            <!-- ============================================ -->
-            <!--                 Blog Articles                -->
-            <!-- ============================================ -->
-
-            {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
-            {% else %}
-                {%- for post in collections.post | reverse -%}
-                    <article class="recent-articles">
-                        <!--Main Article Image-->
-                        <picture class="blog-mainImage">
-                            <img
-                                src="{{ post.data.image }}"
-                                alt="{{ post.data.imageAlt }}"
-                                width="795"
-                                height="400"
-                                decoding="async"
-                            />
-                        </picture>
-                        <!--Article Info-->
-                        <div class="article-group">
-                            <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                        src="/assets/svgs/profile.svg"
-                                        alt="house"
-                                        width="32"
-                                        height="32"
-                                        decoding="async"
-                                    />
-                                </picture>
-                                <span class="blog-author"
-                                    >{{ post.data.author }}</span
-                                >
-                                <span
-                                    aria-hidden="true"
-                                    class="blog-dot"
-                                ></span>
-                                <!--Blog Date-->
-                                <span class="blog-date"
-                                    >{{ post.date | postDate }}</span
-                                >
-                            </div>
-                            <h2 class="blog-h1">{{ post.data.title }}</h2>
-                            <p class="blog-desc">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="blog-link"
-                                >Continue Reading</a
-                            >
-                        </div>
-                    </article>
-                {%- endfor -%}
-            {% endif %}
+<section id="blog-1144">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-content-flex">
+                <span class="cs-topper">News And Articles</span>
+                <h2 class="cs-title">Directly from The Latest News and Articles</h2>
+            </div>
+            <a href="#featured-image" class="cs-button-solid">Discover More</a>
         </div>
-
-        {% include 'components/featured-post.html' %}
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event1.jpg" alt="people" width="305" height="180">
+                </picture>
+                <div class="cs-flex">
+                    <span class="cs-date">07 Sep, 2022</span>
+                    <h3 class="cs-h3">UNICEF Launches $10b Appeal to Help World's Children in 2023</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!
+                    </p>
+                    <a href="{{ blog.url }}" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg" alt="people" width="305" height="180">
+                </picture>
+                <div class="cs-flex">
+                    <span class="cs-date">07 Sep, 2022</span>
+                    <h3 class="cs-h3">Helping Children With Disabilities Improve Quality Of Life</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!
+                    </p>
+                    <a href="{{ post.url }}" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event3.jpg" alt="people" width="305" height="180">
+                </picture>
+                <div class="cs-flex">
+                    <span class="cs-date">07 Sep, 2022</span>
+                    <h3 class="cs-h3">It All Starts With a UNICEF Club: Volunteer Cynthia Yue's Story</h3>
+                    <p class="cs-item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!
+                    </p>
+                    <a href="{{ post.url }}" class="cs-link" id ="featured-image">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+        </ul>
     </div>
+</section>
+                                
+</div>
+
+{% include 'components/cta.html' %}
 {% endblock %}

@@ -24,16 +24,16 @@ eleventyNavigation:
         <picture>
             <source
                 media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
+                srcset="/assets/images/Mount Timpanogos background.jpg"
             />
             <source
                 media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
+                srcset="/assets/images/Mount Timpanogos background.jpg"
             />
             <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/images/cabinets2.jpg"
+                src="/assets/images/Mount Timpanogos background.jpg"
                 alt="kitchen cabinets"
                 loading="eager"
                 width="2500"
@@ -53,16 +53,16 @@ eleventyNavigation:
                 <picture class="cs-picture cs-picture1">
                     <source
                         media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
+                        srcset="/assets/images/Mount Timpanogos with Pine Trees.jpg"
                     />
                     <source
                         media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
+                        srcset="/assets/images/Mount Timpanogos with Pine Trees.jpg"
                     />
                     <img
                         aria-hidden="true"
                         decoding="async"
-                        src="/assets/images/cabinets2.jpg"
+                        src="/assets/images/Mount Timpanogos with Pine Trees.jpg"
                         alt="cabinets"
                         loading="lazy"
                         width="400"
@@ -72,16 +72,16 @@ eleventyNavigation:
                 <picture class="cs-picture cs-picture2">
                     <source
                         media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
+                        srcset="/assets/images/Jackson Barlow.jpg"
                     />
                     <source
                         media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
+                        srcset="/assets/images/Jackson Barlow.jpg"
                     />
                     <img
                         aria-hidden="true"
                         decoding="async"
-                        src="/assets/images/construction.jpg"
+                        src="/assets/images/Jackson Barlow.jpg"
                         alt="house"
                         loading="lazy"
                         width="400"
@@ -92,29 +92,22 @@ eleventyNavigation:
             <!-- Right Content Section-->
             <div class="cs-right">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <h2 class="cs-title">The Story Behind Tanglefoot</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    Like the sturdy pack mules that once carried prospectors through treacherous mountain paths, <strong>Tanglefoot was born from a simple truth:</strong> success comes from unwavering reliability and a willingness to shoulder the heavy loads.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    We saw too many businesses struggling with -underdeveloped websites, -confusing pricing, and missed customers. That's why we founded Tanglefoot—to be the dependable partner that businesses deserve
+                </p>
+                <p class="cs-text">
+                    <strong>Our approach is straightforward:</strong> we bring your customers to your business with the same determination as those legendary pack mules.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
+                        Not sure what I should put here
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
+                    <span class="cs-name">Jackson Barlow</span>
+                    <span class="cs-job">Owner</span>
                     <img
                         class="cs-quote-icon"
                         loading="lazy"
@@ -130,5 +123,115 @@ eleventyNavigation:
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
+     <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ridiculus elementum ullamcorper ipsum porttitor aliquam.
+                        Id magna urna ultrices odio pulvinar. Sed ut.
+                    </p>
+                </div>
+                <label>
+                    Name
+                    <input
+                        required
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                    />
+                </label>
+                <label>
+                    Email
+                    <input
+                        required
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                </label>
+                <label>
+                    Phone
+                    <input
+                        required
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        placeholder="Phone"
+                    />
+                </label>
+                <label>
+                    How Did You Find Us
+                    <input
+                        type="text"
+                        id="find"
+                        name="find-us"
+                        placeholder="How did you find us?"
+                    />
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea
+                        required
+                        name="Message"
+                        id="message"
+                        placeholder="Write message..."
+                    ></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">
+                    Submit Message
+                </button>
+            </form>
+            <div class="cs-right-section">
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:{{ client.email }}"
+                    >{{ client.email }}</a
+                >
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{ client.phoneForTel }}"
+                    >{{ client.phoneFormatted }}</a
+                >
+                <!--Address-->
+                <span class="cs-header">Address</span>
+                <a class="cs-link" href="{{ client.address.mapLink }}">
+                    {{ client.address.lineOne }},
+                    <br />
+                    <span class="cs-block">
+                        {{ client.address.city }}
+                        {{ client.address.state }}
+                        {{ client.address.zip }}
+                    </span>
+                </a>
+
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="/assets/images/Pine Trees.jpg"
+                    />
+                    <img
+                        aria-hidden="true"
+                        decoding="async"
+                        src="/assets/images/Pine Trees.jpg"
+                        alt="building"
+                        loading="lazy"
+                        width="2500"
+                        height="1667"
+                    />
+                </picture>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}

@@ -1,89 +1,700 @@
-/* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
 /*-- -------------------------- -->
-<---          Gallery           -->
+<---         googleads-1428          -->
 <--- -------------------------- -*/
-/* Mobile - 360px - Contains hover animation */
+
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #gallery {
-        position: relative;
-        /* Prevents overflow from the image going off screen */
-        overflow: hidden;
-        padding: var(--sectionPadding);
-        /* Centers button */
-        text-align: center;
-    }
-    #gallery .cs-container {
-        margin: auto;
-        max-width: 82.625em;
-        width: 100%;
-    }
-    #gallery .cs-image-group {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 0 auto 3.75rem;
-        max-width: 82.625em;
-        width: 100%;
-        padding: 0;
-        /* used rem so it doesn't scale with the font size of on parent */
-        font-size: min(1.1vw, 1em);
-        gap: 1.875em;
-    }
-    #gallery .cs-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1.875em;
-    }
-    #gallery .cs-picture {
-        position: relative;
-        display: block;
-    }
-    #gallery .cs-picture img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    #gallery .cs-row-1 .cs-picture1 {
-        height: 35.4375em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-1 .cs-picture2 {
-        height: 39.3125em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-1 .cs-picture3 {
-        height: 32em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-2 .cs-picture1 {
-        height: 30.75em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-2 .cs-picture2 {
-        height: 32.3125em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-2 .cs-picture3 {
-        height: 39.3125em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-3 .cs-picture1 {
-        height: 39.0625em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-3 .cs-picture2 {
-        height: 28.25em;
-        width: 26.25em;
-    }
-    #gallery .cs-row-3 .cs-picture3 {
-        height: 39.3125em;
-        width: 26.25em;
-    }
+  #googleads-1428 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #googleads-1428 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 10;
+  }
+  #googleads-1428 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #ggoogleads-1428 .cs-topper {
+    color: var(--secondary);
+  }
+  #googleads-1428 .cs-title {
+    color: #000;
+  }
+  #googleads-1428 .cs-text {
+    margin-bottom: 1rem;
+    color: #000;
+    opacity: .8;
+  }
+  #googleads-1428 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #googleads-1428 .cs-button-solid {
+    font-size: 1rem;
+      text-align: center;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      width: 11.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      /* clips corners of the before element */
+      overflow: hidden;
+      margin: 0;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 0;
+      background-color: var(--primary);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s;
+  }
+  #googleads-1428 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #ffffff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #googleads-1428 .cs-button-solid:hover {
+    color: #fff;
+      color: var(--primary)
+  }
+  #googleads-1428 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #googleads-1428 .cs-card-group {
+    width: 100%;
+    /* changes to 630px at large desktop */
+    max-width: 59rem;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+  }
+  #googleads-1428 .cs-item {
+    text-align: left;
+    list-style: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border: solid 3px #fff;
+    border-radius: 8px;
+  }
+  #googleads-1428 .cs-item:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #googleads-1428 .cs-item:hover .cs-picture img {
+    opacity: .3;
+    transform: scale(1.1);
+  }
+  #googleads-1428 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #googleads-1428 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  #googleads-1428 .cs-picture {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #googleads-1428 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .6s, opacity .3s;
+  }
+  #googleads-1428 .cs-flex {
+    padding: 1.5rem;
+    /* prblog padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+  #googleads-1428 .cs-h3 {
+    font-size: 1.25rem;
+    text-align: inherit;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
+    margin: 0 0 0.75rem 0;
+    transition: color .3s;
+  }
+  #googleads-1428 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 1.5rem;
+    padding: 0 0 1.5rem;
+    color: var(--bodyTextColor);
+    border-bottom: 1px solid var(--primary);
+  }
+  #googleads-1428 .cs-progress-flex {
+    width: 100%;
+    margin: 0 0 0.5rem;
+  }
+  #googleads-1428 .cs-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 4px - 8px */
+    gap: clamp(0.25rem, 1vw, 0.5rem);
+  }
+  #googleads-1428 .cs-progress {
+    width: 100%;
+    height: 6px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #E8E8E8;
+  }
+  #googleads-1428 .cs-progress-bar {
+    width: var(--progress);
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    display: block;
+  }
+  #googleads-1428 .cs-percentage {
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #googleads-1428 .cs-number-group {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #googleads-1428 .cs-raised {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+  #googleads-1428 .cs-number {
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #googleads-1428 .cs-stats-container {
+    width: 100%;
+    /* changes to 1280px at large desktop */
+    max-width: 59rem;
+    position: relative;
+    z-index: 1;
+  }
+  #googleads-1428 .cs-stats-group {
+    width: 100%;
+    max-width: 59rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 4vw, 4rem);
+  }
+  #googleads-1428 .cs-stat {
+    list-style: none;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 16px - 20xp */
+    gap: clamp(1rem, 2vw, 1.25rem);
+    grid-column: span 6;
+  }
+  #googleads-1428 .cs-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #googleads-1428 .cs-icon-wrapper {
+    /* 60px - 88px */
+    width: clamp(3.75rem, 7vw, 5.5rem);
+    height: clamp(3.75rem, 7vw, 5.5rem);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    position: relative;
+    z-index: 1;
+  }
+  #googleads-1428 .cs-icon-wrapper:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    opacity: .1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  #googleads-1428 .cs-icon {
+    /* 32px - 48px */
+    width: clamp(2rem, 4vw, 3rem);
+    height: auto;
+    display: block;
+  }
+  #googleads-1428 .cs-stat-number {
+    /* 25px - 39px */
+    font-size: clamp(1.5625rem, 3vw, 2.4375rem);
+    text-align: inherit;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #googleads-1428 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875em, 3vw, 1rem);
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #googleads-1428 .cs-background {
+    width: 100%;
+    /* 100% at large desktop */
+    height: 70%;
+    /* removed at large desktop */
+    max-height: 40.625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #googleads-1428 .cs-background:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #f8f7f7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #googleads-1428 .cs-background img {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #googleads-1428 .cs-container {
+    max-width: 80rem;
+  }
+  #googleads-1428 .cs-item {
+    grid-column: span 6;
+  }
+  #googleads-1428 .cs-stat {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #googleads-1428 .cs-info {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #googleads-1428 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #googleads-1428 .cs-content {
+    text-align: left;
+    /* this padding will push down and maintain the same distance between the bottom of the group and the top of the cs-stats-container.  That way when you add or subtract content from this group it will always be the right distance from the stat container below it */
+    padding-bottom: 15.625rem;
+    align-items: flex-start;
+  }
+  #googleads-1428 .cs-card-group {
+    /* same amount as the translateY value to offset it */
+    margin-bottom: 6.25rem;
+    /* sends it to the left in the 1st position */
+    order: -1;
+    align-self: center;
+  }
+  #googleads-1428 .cs-item:nth-of-type(2) {
+    transform: translateY(6.25rem);
+  }
+  #googleads-1428 .cs-card-group {
+    max-width: 39.375rem;
+  }
+  #googleads-1428 .cs-stats-container {
+    max-width: 80rem;
+    /* makes it overlap the cs-container so the cards are next to it on the left */
+    margin-top: -9.375rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #googleads-1428 .cs-stats-container:before {
+    /* white background on the stats */
+    /* we add this to be the background so as the height of the cs-content changes, this white background area will ALWAYS have 36 pixels between the top of it and the stats content below it.  This is an "illusion" we use to create the LOOK of it being the section background so we have mroe control over the white space above the stats group. */
+    content: '';
+    width: 105vw;
+    height: 62.5rem;
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: -2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  #googleads-1428 .cs-stats-group {
+    max-width: 36.5625rem;
+    justify-content: flex-end;
+  }
+  #googleads-1428 .cs-background {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #googleads-1428 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #googleads-1428 .cs-title,
+  body.dark-mode #googleads-1428 .cs-text,
+  body.dark-mode #googleads-1428 .cs-h3,
+  body.dark-mode #googleads-1428 .cs-link,
+  body.dark-mode #googleads-1428 .cs-item-text,
+  body.dark-mode #googleads-1428 .cs-number,
+  body.dark-mode #googleads-1428 .cs-desc,
+  body.dark-mode #googleads-1428 .cs-percentage {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #googleads-1428 .cs-link:hover {
+    color: var(--secondary);
+  }
+  body.dark-mode #googleads-1428 .cs-item:hover .cs-h3 {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #googleads-1428 .cs-text,
+  body.dark-mode #googleads-1428 .cs-item-text,
+  body.dark-mode #googleads-1428 .cs-desc {
+    opacity: .8;
+  }
+  body.dark-mode #googleads-1428 .cs-progress-bar {
+    background-color: #fff;
+  }
+  body.dark-mode #googleads-1428 .cs-item {
+    background-color: var(--medium);
+    border: solid 3px #fff;
+    border-radius: 8px;
+  }
+  body.dark-mode #googleads-1428 .cs-item:before {
+    opacity: .3;
+  }
+  body.dark-mode #googleads-1428 .cs-item-text {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #googleads-1428 .cs-picture:before {
+    background-color: #FFF;
+  }
+  body.dark-mode #googleads-1428 .cs-progress {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #googleads-1428 .cs-background:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: .02;
+  }
+  body.dark-mode #googleads-1428 .cs-background {
+    opacity: .02;
+  }
+  body.dark-mode #googleads-1428 .cs-stats-container:before {
+    background-color: var(--dark);
+  }
+  body.dark-mode #googleads-1428 .cs-stat-number,
+  body.dark-mode #googleads-1428 .cs-desc {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #googleads-1428 .cs-desc {
+    opacity: .8;
+  }
+  body.dark-mode #donations-1428 .cs-button-solid {
+    background-color: var(--secondaryLight);
+  }
 }
 
-/*# sourceMappingURL=projects.css.map */
+/*-- -------------------------- -->
+<---           Logos            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #logos-572 {
+      /* 60px - 130px */
+      padding: clamp(3.75rem, 8vw, 8.125rem) 1rem;
+      background-color: var(--secondary);
+  }
+  #logos-572 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+  }
+  #logos-572 .cs-logo {
+      width: auto;
+      max-width: 90%;
+      height: auto;
+      margin: 0;
+      display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #logos-572 .cs-container {
+      justify-content: space-between;
+  }
+  #logos-572 .cs-logo {
+      width: 20%;
+      /* the max width becomes whatever the actual width of the image is */
+      max-width: max-content;
+      height: auto;
+      display: block;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-566 {
+      padding: var(--sectionPadding);
+  }
+  #reviews-566 .cs-container {
+      width: 100%;
+      /* changes to 1280px at tablet */
+      max-width: 34.375rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-566 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 32.625rem;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+  }
+
+  #reviews-566 .cs-card-group {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2.5vw, 1.15rem);
+  }
+  #reviews-566 .cs-item {
+      list-style: none;
+      width: 100%;
+      max-width: 39.375rem;
+      /* 32px - 60px top & bottom */
+      /* 16px - 48px left & right */
+      padding: clamp(2rem, 6.15vw, 3.75rem) clamp(1rem, 4.15vw, 3rem);
+      background-color: #f1f1f4;
+      /* prevents padding from adding to height and width */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      border-radius: 8px;
+  }
+  #reviews-566 .cs-stars {
+      /* 169px - 189px */
+      width: clamp(10.5625rem, 20vw, 11.8125rem);
+      height: auto;
+      /* 20px - 24px */
+      margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
+      display: block;
+  }
+  #reviews-566 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      margin: 0;
+      /* 40px - 64px */
+      margin-bottom: clamp(2.5rem, 8vw, 4rem);
+      color: var(--bodyTextColor);
+  }
+  #reviews-566 .cs-flex-group {
+      /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+      margin-top: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.25rem;
+  }
+  #reviews-566 .cs-profile {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      /* clips image corners to make circle */
+      overflow: hidden;
+      position: relative;
+      display: block;
+  }
+  #reviews-566 .cs-profile img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* makes the image behave like a background image */
+      object-fit: cover;
+  }
+  #reviews-566 .cs-name {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.5em;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: var(--headerColor);
+      display: block;
+  }
+  #reviews-566 .cs-job {
+      /* 13px - 16px */
+      font-size: clamp(0.8125rem, 1.6vw, 1rem);
+      line-height: 1.2em;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin: 0;
+      color: var(--bodyTextColor);
+      display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #reviews-566 .cs-container {
+      max-width: 80rem;
+  }
+  #reviews-566 .cs-card-group {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-566 .cs-topper {
+      color: var(--primaryLight);
+  }
+  body.dark-mode #reviews-566 .cs-title,
+  body.dark-mode #reviews-566 .cs-text,
+  body.dark-mode #reviews-566 .cs-item-text,
+  body.dark-mode #reviews-566 .cs-name,
+  body.dark-mode #reviews-566 .cs-job {
+      color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-566 .cs-text {
+      opacity: 0.8;
+  }
+  body.dark-mode #reviews-566 .cs-item {
+      background-color: var(--secondary);
+      border: solid 3px #fff;
+      border-radius: 8px;
+  }
+}
+
+                              
+
+                              
+                                

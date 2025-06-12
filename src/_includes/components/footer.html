@@ -5,19 +5,11 @@
 <footer id="footer">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"
-                ><img
-                    loading="lazy"
-                    decoding="async"
-                    src="/assets/svgs/logo-white.svg"
-                    alt="logo"
-                    width="264"
-                    height="78"
-            /></a>
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="\assets\svgs\Tanglefoot Logo Footer.svg" alt="logo" width="500" height="500"></a>
             <p>
-                Extra content if you need it, if not you can delete this whole p
-                tag. I usually do.
+                Shouldering your website like a reliable pack mule—we deliver robust websites built your way, whether through hand-coded or page building tools.
             </p>
+            <a href="" class="cs-button-solid">Get Started</a>
         </div>
         <div class="right-section">
             <div class="lists">
@@ -32,7 +24,7 @@
                         <a href="/about">About Us</a>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <a href="/Blog">Blog</a>
                     </li>
                     <li>
                         <a href="/reviews">Reviews</a>
@@ -45,10 +37,10 @@
                     <li>
                         <h2>Services</h2>
                     </li>
-                    <li>Service1</li>
-                    <li>Service2</li>
-                    <li>Service4</li>
-                    <li>Service5</li>
+                    <li>Web Design</li>
+                    <li>Google Ads</li>
+                    <li>Social Media Ads</li>
+                    <li>Service 4</li>
                 </ul>
                 <ul>
                     <li>
@@ -56,20 +48,20 @@
                     </li>
                     <li>
                         <a href="/contact">
-                            {{ client.address.lineOne }}<br />
-                            {{ client.address.lineTwo }}<br />
-                            {{ client.address.city }}
-                            {{ client.address.state }}
-                            {{ client.address.zip }}
+                            {{client.address.lineOne}}<br>
+                            {{client.address.city}}
+                            {{client.address.state}}
+                            {{client.address.zip}}
                         </a>
                     </li>
                     <li>
-                        <a href="tel:{{ client.phoneForTel }}">
-                            T: {{ client.phoneFormatted }}
+                        <a href="tel:{{client.phoneForTel}}">
+                            T:
+                            {{client.phoneFormatted}}
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{ client.email }}">Click to Email</a>
+                        <a href="mailto:{{client.email}}">Click to Email</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +70,8 @@
 
     <div class="credit">
         <span>Designed and Hand Coded by</span>
-        <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-        <span class="copyright"> Copyright {% year %} - Present</span>
+        <a href="/" target="_blank" rel="noopener">Tanglefoot Digital</a>
+        <span class="copyright">
+            Copyright {% year %} - Present</span>
     </div>
 </footer>
