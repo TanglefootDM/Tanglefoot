@@ -1073,13 +1073,15 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cta-1071 {
-      padding: var(--sectionPadding);
-      background-color: var(--primary);
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 2.5%;
+      margin-top: 5%;
+      border-radius: 8px;
+      overflow: hidden;
       position: relative;
       z-index: 1;
-      border-top: 5px solid #fff;
-      border-bottom: 5px solid #fff;
-  }
+    }
   #cta-1071 .cs-container {
       width: 100%;
       max-width: 80rem;
@@ -1087,54 +1089,69 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
+      gap: clamp(2rem, 4vw, 2.5rem); /* tightened gap */
+      position: relative;
+      z-index: 2;
+      padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 2vw, 2rem); /* less vertical padding */
   }
   #cta-1071 .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: center;
+      text-align: center !important;
       width: 100%;
       display: flex;
       flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
       align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
+      gap: clamp(1.25rem, 3vw, 2rem); /* tightened gap */
   }
   #cta-1071 .cs-flex {
       max-width: 39.375rem;
+      margin: 0 auto;
   }
-
+  #cta-1071 .cs-topper {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--primaryLight);
+      margin-bottom: 0.5rem; /* less margin */
+      font-weight: 600;
+      text-align: center;
+  }
   #cta-1071 .cs-title {
-      margin: 0;
-
-      color: var(--bodyTextColorWhite);
+      margin: 0 0 0.75rem 0; /* less bottom margin */
+      color: var(--bodyTextColorWhite, #fff);
+      text-align: center;
+      margin-bottom: -10px; 
   }
   #cta-1071 .cs-button-box {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column; /* stack buttons vertically on mobile */
+      flex-wrap: nowrap;
       justify-content: center;
-      gap: 1rem;
+      align-items: center;
+      gap: .5rem; /* slightly tighter */
       border-radius: 8px;
+      margin-top: 0.5rem; /* less margin */
+      width: 100%;
   }
-  #cta-1071 .cs-button-solid {
+  #cta-1071 .cs-button-solid,
+  #cta-1071 .cs-button-transparent {
       font-size: 1rem;
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      line-height: clamp(2.5rem, 4vw, 3rem); /* slightly less height */
       text-decoration: none;
       font-weight: 700;
       text-align: center;
       margin: 0;
-      color: #fff;
-      min-width: 9.375rem;
-      padding: 0 1.5rem;
-      background-color: var(--secondaryLight);
+      min-width: 8.5rem; /* slightly less width */
+      padding: 0 1.25rem; /* slightly less padding */
       display: inline-block;
       position: relative;
       z-index: 1;
-      /* prevents padding from adding to the width */
       box-sizing: border-box;
       border-radius: 8px;
+      width: 100%; /* make buttons full width on mobile */
+      max-width: 350px;
+  }
+  #cta-1071 .cs-button-solid {
+      color: #fff;
+      background-color: var(--secondaryLight);
   }
   #cta-1071 .cs-button-solid:before {
       content: "";
@@ -1151,29 +1168,15 @@
   }
   #cta-1071 .cs-button-solid:hover:before {
       width: 100%;
-    }
+  }
   #cta-1071 .cs-button-solid:hover {
       color: var(--primary)
-    }
+  }
   #cta-1071 .cs-button-transparent {
-      font-size: 1rem;
-      /* 46px - 56px */
-      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-      text-decoration: none;
-      font-weight: 700;
-      text-align: center;
-      margin: 0;
       color: #fff;
-      min-width: 9.375rem;
-      padding: 0 1.5rem;
       background-color: transparent;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-      transition: color 0.3s;
-      border-radius: 8px;
+      border: 1px solid #fff;
+      transition: color 0.3s,
   }
   #cta-1071 .cs-button-transparent:before {
       content: "";
@@ -1189,13 +1192,11 @@
       border-radius: 8px;
   }
   #cta-1071 .cs-button-transparent:after {
-      /* border */
       content: "";
       position: absolute;
       height: 100%;
       width: 100%;
       background-color: transparent;
-      /* prevents padding from adding to the width */
       box-sizing: border-box;
       border: 1px solid #fff;
       top: 0;
@@ -1207,6 +1208,7 @@
   }
   #cta-1071 .cs-button-transparent:hover {
       color: var(--primary);
+      background: #fff;
   }
   #cta-1071 .cs-button-transparent:hover:before {
       width: 100%;
@@ -1218,20 +1220,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
-  }
-  #cta-1071 .cs-background:before {
-      /* background color overlay */
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: var(--primary);
-      opacity: 0.25;
-      top: 0;
-      left: 0;
-      z-index: 1;
+      z-index: 0;
+      border-radius: 8px;
+      overflow: hidden;
   }
   #cta-1071 .cs-background img {
       position: absolute;
@@ -1239,24 +1230,49 @@
       left: 0;
       height: 100%;
       width: 100%;
-      /* Makes img tag act as a background image */
       object-fit: cover;
+      border-radius: 8px;
+      filter: brightness(.7);
   }
-  
 }
+
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  #cta-1071 {
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 2.5%;
+      margin-top: 5%;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
   #cta-1071 .cs-content {
-      text-align: left;
-      flex-direction: row;
-      justify-content: space-between;
+      text-align: center !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
   #cta-1071 .cs-button-box {
+      flex-direction: row; /* side by side on desktop */
       flex-wrap: nowrap;
       align-items: center;
       flex: none;
+      justify-content: center;
+      gap: 1rem;
+      width: auto;
+  }
+  #cta-1071 .cs-button-solid,
+  #cta-1071 .cs-button-transparent {
+      width: auto; /* remove full width on desktop */
+      max-width: none;
+  }
+  #cta-1071 .cs-title {
+      margin-bottom: -10px;
   }
 }
+
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
