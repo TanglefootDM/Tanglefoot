@@ -1,10 +1,10 @@
 /*-- -------------------------- -->
-<---         meta-ads-1528     -->
+<---         social-ads-1528     -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #meta-ads-1528 {
+  #social-ads-1528 {
     padding: var(--sectionPadding);
     overflow: hidden;
     display: flex;
@@ -14,7 +14,7 @@
     position: relative;
     z-index: 1;
   }
-  #meta-ads-1528 .cs-container {
+  #social-ads-1528 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 34.375rem;
@@ -27,7 +27,7 @@
     position: relative;
     z-index: 10;
   }
-  #meta-ads-1528 .cs-content {
+  #social-ads-1528 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -37,21 +37,21 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #meta-ads-1528 .cs-topper {
+  #social-ads-1528 .cs-topper {
     color: var(--secondary);
   }
-  #meta-ads-1528 .cs-title {
+  #social-ads-1528 .cs-title {
     color: #000;
   }
-  #meta-ads-1528 .cs-text {
+  #social-ads-1528 .cs-text {
     margin-bottom: 1rem;
     color: #000;
     opacity: .8;
   }
-  #meta-ads-1528 .cs-text:last-of-type {
+  #social-ads-1528 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #meta-ads-1528 .cs-button-solid {
+  #social-ads-1528 .cs-button-solid {
       font-size: 1rem;
       text-align: center;
       /* 46px - 56px */
@@ -71,7 +71,7 @@
       z-index: 1;
       transition: color 0.3s;
   }
-  #meta-ads-1528 .cs-button-solid:before {
+  #social-ads-1528 .cs-button-solid:before {
       content: "";
       position: absolute;
       display: block;
@@ -84,14 +84,14 @@
       z-index: -1;
       transition: width 0.3s;
   }
-  #meta-ads-1528 .cs-button-solid:hover {
+  #social-ads-1528 .cs-button-solid:hover {
       color: #fff;
       color: var(--primary)
   }
-  #meta-ads-1528 .cs-button-solid:hover:before {
+  #social-ads-1528 .cs-button-solid:hover:before {
       width: 100%;
   }
-  #meta-ads-1528 .cs-card-group {
+  #social-ads-1528 .cs-card-group {
     width: 100%;
     /* changes to 630px at large desktop */
     max-width: 59rem;
@@ -101,7 +101,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 1.25rem;
   }
-  #meta-ads-1528 .cs-item {
+  #social-ads-1528 .cs-item {
     text-align: left;
     list-style: none;
     border-radius: 1rem;
@@ -115,17 +115,17 @@
     border: solid 3px #fff;
     border-radius: 8px;
   }
-  #meta-ads-1528 .cs-item:hover {
+  #social-ads-1528 .cs-item:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
   }
-  #meta-ads-1528 .cs-item:hover .cs-picture img {
+  #social-ads-1528 .cs-item:hover .cs-picture img {
     opacity: .9;
     transform: scale(1.1);
   }
-  #meta-ads-1528 .cs-item:hover .cs-h3 {
+  #social-ads-1528 .cs-item:hover .cs-h3 {
     color: var(--primary);
   }
-  #meta-ads-1528 .cs-link {
+  #social-ads-1528 .cs-link {
     text-decoration: none;
     width: 100%;
     display: flex;
@@ -133,7 +133,7 @@
     justify-content: space-between;
     position: relative;
   }
-  #meta-ads-1528 .cs-picture {
+  #social-ads-1528 .cs-picture {
     width: 100%;
     height: 15rem;
     background-color: #000;
@@ -142,7 +142,7 @@
     position: relative;
     z-index: 1;
   }
-  #meta-ads-1528 .cs-picture img {
+  #social-ads-1528 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +151,7 @@
     object-fit: cover;
     transition: transform .6s, opacity .3s;
   }
-  #meta-ads-1528 .cs-flex {
+  #social-ads-1528 .cs-flex {
     padding: 1.5rem;
     /* prblog padding from affecting height and width */
     box-sizing: border-box;
@@ -161,7 +161,7 @@
     position: relative;
     z-index: 2;
   }
-  #meta-ads-1528 .cs-h3 {
+  #social-ads-1528 .cs-h3 {
     font-size: 1.25rem;
     text-align: inherit;
     line-height: 1.2em;
@@ -170,7 +170,7 @@
     margin: 0 0 0.75rem 0;
     transition: color .3s;
   }
-  #meta-ads-1528 .cs-item-text {
+  #social-ads-1528 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -180,7 +180,7 @@
     color: var(--bodyTextColor);
   }
   
-  #meta-ads-1528 .cs-number-group {
+  #social-ads-1528 .cs-number-group {
     width: 100%;
     margin: 0;
     display: flex;
@@ -189,14 +189,14 @@
     gap: 1.5rem;
   }
 
-  #meta-ads-1528 .cs-stats-container {
+  #social-ads-1528 .cs-stats-container {
     width: 100%;
     /* changes to 1280px at large desktop */
     max-width: 59rem;
     position: relative;
     z-index: 1;
   }
-  #meta-ads-1528 .cs-stats-group {
+  #social-ads-1528 .cs-stats-group {
     width: 100%;
     max-width: 59rem;
     margin: 0;
@@ -206,7 +206,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 4vw, 4rem);
   }
-  #meta-ads-1528 .cs-stat {
+  #social-ads-1528 .cs-stat {
     list-style: none;
     width: 100%;
     max-width: 25rem;
@@ -219,14 +219,14 @@
     gap: clamp(1rem, 2vw, 1.25rem);
     grid-column: span 6;
   }
-  #meta-ads-1528 .cs-info {
+  #social-ads-1528 .cs-info {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
-  #meta-ads-1528 .cs-icon-wrapper {
+  #social-ads-1528 .cs-icon-wrapper {
     /* 60px - 88px */
     width: clamp(3.75rem, 7vw, 5.5rem);
     height: clamp(3.75rem, 7vw, 5.5rem);
@@ -240,7 +240,7 @@
     position: relative;
     z-index: 1;
   }
-  #meta-ads-1528 .cs-icon-wrapper:before {
+  #social-ads-1528 .cs-icon-wrapper:before {
     /* background color */
     content: '';
     width: 100%;
@@ -252,13 +252,13 @@
     top: 0;
     left: 0;
   }
-  #meta-ads-1528 .cs-icon {
+  #social-ads-1528 .cs-icon {
     /* 32px - 48px */
     width: clamp(2rem, 4vw, 3rem);
     height: auto;
     display: block;
   }
-  #meta-ads-1528 .cs-stat-number {
+  #social-ads-1528 .cs-stat-number {
     /* 25px - 39px */
     font-size: clamp(1.5625rem, 3vw, 2.4375rem);
     text-align: inherit;
@@ -267,7 +267,7 @@
     margin: 0;
     color: var(--headerColor);
   }
-  #meta-ads-1528 .cs-desc {
+  #social-ads-1528 .cs-desc {
     /* 14px - 16px */
     font-size: clamp(0.875em, 3vw, 1rem);
     text-align: inherit;
@@ -275,7 +275,7 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #meta-ads-1528 .cs-background {
+  #social-ads-1528 .cs-background {
     width: 100%;
     /* 100% at large desktop */
     height: 70%;
@@ -286,7 +286,7 @@
     left: 0;
     z-index: -1;
   }
-  #meta-ads-1528 .cs-background:before {
+  #social-ads-1528 .cs-background:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -297,7 +297,7 @@
     left: 0;
     z-index: -1;
   }
-  #meta-ads-1528 .cs-background img {
+  #social-ads-1528 .cs-background img {
     width: 100%;
     height: 100%;
     opacity: .5;
@@ -308,55 +308,55 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #meta-ads-1528 .cs-container {
+  #social-ads-1528 .cs-container {
     max-width: 80rem;
   }
-  #meta-ads-1528 .cs-item {
+  #social-ads-1528 .cs-item {
     grid-column: span 6;
   }
-  #meta-ads-1528 .cs-stat {
+  #social-ads-1528 .cs-stat {
     flex-direction: row;
     align-items: flex-start;
   }
-  #meta-ads-1528 .cs-info {
+  #social-ads-1528 .cs-info {
     text-align: left;
     align-items: flex-start;
   }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #meta-ads-1528 .cs-container {
+  #social-ads-1528 .cs-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #meta-ads-1528 .cs-content {
+  #social-ads-1528 .cs-content {
     text-align: left;
     /* this padding will push down and maintain the same distance between the bottom of the group and the top of the cs-stats-container.  That way when you add or subtract content from this group it will always be the right distance from the stat container below it */
     padding-bottom: 15.625rem;
     align-items: flex-start;
   }
-  #meta-ads-1528 .cs-card-group {
+  #social-ads-1528 .cs-card-group {
     /* same amount as the translateY value to offset it */
     margin-bottom: 6.25rem;
     /* sends it to the left in the 1st position */
     order: -1;
     align-self: center;
   }
-  #meta-ads-1528 .cs-item:nth-of-type(2) {
+  #social-ads-1528 .cs-item:nth-of-type(2) {
     transform: translateY(6.25rem);
   }
-  #meta-ads-1528 .cs-card-group {
+  #social-ads-1528 .cs-card-group {
     max-width: 39.375rem;
   }
-  #meta-ads-1528 .cs-stats-container {
+  #social-ads-1528 .cs-stats-container {
     max-width: 80rem;
     /* makes it overlap the cs-container so the cards are next to it on the left */
     margin-top: -9.375rem;
     display: flex;
     justify-content: flex-end;
   }
-  #meta-ads-1528 .cs-stats-container:before {
+  #social-ads-1528 .cs-stats-container:before {
     /* white background on the stats */
     /* we add this to be the background so as the height of the cs-content changes, this white background area will ALWAYS have 36 pixels between the top of it and the stats content below it.  This is an "illusion" we use to create the LOOK of it being the section background so we have mroe control over the white space above the stats group. */
     content: '';
@@ -371,23 +371,23 @@
     transform: translateX(-50%);
     z-index: -1;
   }
-  #meta-ads-1528 .cs-stats-group {
+  #social-ads-1528 .cs-stats-group {
     max-width: 36.5625rem;
     justify-content: flex-end;
   }
-  #meta-ads-1528 .cs-background {
+  #social-ads-1528 .cs-background {
     height: 100%;
     max-height: 100%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #meta-ads-1528 .cs-topper {
+  body.dark-mode #social-ads-1528 .cs-topper {
     color: var(--primaryLight);
   }
-  body.dark-mode #meta-ads-1528 .cs-title,
-  body.dark-mode #meta-ads-1528 .cs-text,
-  body.dark-mode #meta-ads-1528 .cs-h3,
+  body.dark-mode #social-ads-1528 .cs-title,
+  body.dark-mode #social-ads-1528 .cs-text,
+  body.dark-mode #social-ads-1528 .cs-h3,
   body.dark-mode #googleads-1428 .cs-link,
   body.dark-mode #googleads-1428 .cs-item-text,
   body.dark-mode #googleads-1428 .cs-number,
