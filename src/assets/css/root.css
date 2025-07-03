@@ -1016,12 +1016,12 @@
   #int-hero h1 {
     position: relative;
     margin: 0 auto;
-    margin-top: 4.375rem;
+    margin-top: 7rem;
     margin-bottom: 1.875rem;
     max-width: 31.25rem;
     width: 96%;
-    font-size: 2.1333333333rem;
-    color: #fff;
+    font-size: 2.5rem;
+    color: #ffffff;
     text-align: center;
   }
   #int-hero p {
@@ -1034,16 +1034,16 @@
     text-align: center;
   }
   #int-hero:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0;
-    display: block;
-    background: #2c394b;
-    height: 100%;
-    width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 1;
+  display: block;
+  background: linear-gradient(to bottom, #2f306100 30%, #2f3061FF 100%);
+  height: 100%;
+  width: 100%;
   }
 }
 /* Tablet */
@@ -1064,6 +1064,10 @@
     padding-top: 11.25rem;
     font-size: inherit;
     padding-block-end: 6.25rem;
+  }
+  #int-hero h1 {
+    font-size : 5rem;
+    margin-top: 6rem;
   }
 }
 /*-- -------------------------- -->

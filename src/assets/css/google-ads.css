@@ -254,7 +254,7 @@
   }
   #googleads-1428 .cs-icon {
     /* 32px - 48px */
-    width: clamp(2rem, 4vw, 3rem);
+    width: clamp(3rem, 5vw, 4rem);
     height: auto;
     display: block;
   }
@@ -403,6 +403,9 @@
   }
   body.dark-mode #googleads-1428 .cs-item:hover .cs-h3 {
     color: var(--primaryLight);
+  }
+  body.dark-mode #googleads-1428 .cs-icon  {
+    filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #googleads-1428 .cs-text,
   body.dark-mode #googleads-1428 .cs-item-text,

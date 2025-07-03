@@ -254,7 +254,7 @@
   }
   #web-design-1628 .cs-icon {
     /* 32px - 48px */
-    width: clamp(2rem, 4vw, 3rem);
+    width: clamp(3rem, 5vw, 4rem);
     height: auto;
     display: block;
   }
@@ -269,7 +269,7 @@
   }
   #web-design-1628 .cs-desc {
     /* 14px - 16px */
-    font-size: clamp(0.875em, 3vw, 1rem);
+    font-size: clamp(0.875em, 3vw, .5rem);
     text-align: inherit;
     line-height: 1.5em;
     margin: 0;
@@ -401,6 +401,10 @@
   body.dark-mode #web-design-1628 .cs-button-solid {
     background-color: var(--secondaryLight);
   }
+  body.dark-mode #web-design-1628 .cs-icon  {
+    filter: grayscale(1) brightness(300%);
+  }
+
   body.dark-mode #web-design-1628 .cs-item:hover .cs-h3 {
     color: var(--primaryLight);
   }
