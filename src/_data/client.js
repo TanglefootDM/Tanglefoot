@@ -4,12 +4,12 @@ module.exports = {
     phoneForTel: "801-362-1378",
     phoneFormatted: "(801) 362-1738",
     address: {
-        lineOne: "",
+        lineOne: "168 E 100 S",
         lineTwo: "",
-        city: "",
-        state: "",
-        zip: "",
-        country: "",
+        city: "Alpine",
+        state: "UT",
+        zip: "84004",
+        country: "US",
         mapLink: "",
     },
     socials: {

@@ -129,8 +129,11 @@
       left: -47%;
       opacity: .1;
       position: absolute;
-      top: 40%;
+      top: 45%;
       z-index: -1;
+  }
+  html {
+  scroll-behavior: smooth;
   }
 }
 /* Desktop - 1024px */
