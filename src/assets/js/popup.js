@@ -1,18 +1,53 @@
-console.log('Popup script loaded');
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Popup script loaded');
 
-// Show popup when page loads
-window.addEventListener('load', function() {
-    console.log('Page loaded, trying to show popup');
     const popup = document.getElementById('popup-overlay');
+    
     if (popup) {
         console.log('Popup element found');
-        popup.classList.remove('popup-hidden');
+        
+        // Show popup with 3-second delay and fade-in
+        setTimeout(function() {
+            popup.classList.remove('popup-hidden');
+            // Add a small delay to ensure display change happens first
+            setTimeout(function() {
+                popup.classList.add('popup-show');
+            }, 10);
+        }, 3000); // 3 second delay
+        
+        // Close popup when X is clicked
+        const closeBtn = document.querySelector('.close-btn');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                popup.classList.remove('popup-show');
+                // Wait for fade-out animation to complete before hiding
+                setTimeout(function() {
+                    popup.classList.add('popup-hidden');
+                }, 300);
+            });
+        }
+        
+        // Close popup when clicking outside
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+                popup.classList.remove('popup-show');
+                setTimeout(function() {
+                    popup.classList.add('popup-hidden');
+                }, 300);
+            }
+        });
+        
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                popup.classList.remove('popup-show');
+                setTimeout(function() {
+                    popup.classList.add('popup-hidden');
+                }, 300);
+            }
+        });
+        
     } else {
         console.log('Popup element NOT found');
     }
-});
-
-// Close popup when X is clicked
-document.querySelector('.close-btn').addEventListener('click', function() {
-    document.getElementById('popup-overlay').classList.add('popup-hidden');
 });

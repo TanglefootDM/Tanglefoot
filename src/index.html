@@ -490,12 +490,22 @@ eleventyNavigation:
 <!--                  Pop-Up                    -->
 <!-- ============================================ -->
 
-<script src="src/assets/js/popup.js"></script>
+<script src="assets/js/popup.js"></script>
     <div id="popup-overlay" class="popup-hidden">
         <div class="popup-content">
             <span class="close-btn">&times;</span>
-            <h2>Welcome!</h2>
-            <p>This is a special message for this page.</p>
+            <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/popup background.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/popup background.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/popup background.jpg" alt="coding" width="1280" height="568">
+        </picture>
+            <div class="popup-inner">
+                <h2>Welcome to Our Site!</h2>
+                <p>We're excited to have you here. Discover our amazing products and services designed just for you. Join thousands of satisfied customers who have already transformed their experience with us.</p>
+                <a class="cs-button-solid" href="\reviews">Learn More</a>
+            </div>
         </div>
     </div>
                                 
